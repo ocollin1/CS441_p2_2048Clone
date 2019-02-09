@@ -19,10 +19,10 @@ public class Square {
 
 
     int getInd(){
-        return ind;
+        return this.ind;
     }
     int getVal(){
-        return val;
+        return this.val;
     }
 
     public Square getnSq(){
