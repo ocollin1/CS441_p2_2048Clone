@@ -57,15 +57,19 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/TLcorner"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="left"
                 android:layout_weight="1"
                 android:orientation="vertical"
 
+
                 >
 
                 <LinearLayout
+
+
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
                     android:layout_gravity="top"
@@ -73,14 +77,18 @@
                     >
 
                     <Button
+                        android:id="@+id/TL1"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text=""/>
 
                     <Button
+                        android:id="@+id/TL2"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:text=""/>
 
 
                 </LinearLayout>
@@ -92,11 +100,15 @@
                     >
 
                     <Button
+                        android:id="@+id/TL3"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/TL4"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -119,7 +131,8 @@
             android:layout_gravity="center_vertical|left"
             android:layout_weight="5"
             android:layout_marginLeft="15dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/TRcorner">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -138,11 +151,15 @@
                     >
 
                     <Button
+                        android:id="@+id/TR1"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/TR2"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -157,11 +174,15 @@
                     >
 
                     <Button
+                        android:id="@+id/TR3"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/TR4"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -214,11 +235,15 @@
                     >
 
                     <Button
+                        android:id="@+id/BL1"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/BL2"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -233,11 +258,15 @@
                     >
 
                     <Button
+                        android:id="@+id/BL3"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/BL4"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -280,11 +309,15 @@
                     >
 
                     <Button
+                        android:id="@+id/BR1"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/BR2"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -299,11 +332,15 @@
                     >
 
                     <Button
+                        android:id="@+id/BR3"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
 
                     <Button
+                        android:id="@+id/BR4"
+                        android:text=""
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1" />
@@ -325,6 +362,64 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|center">
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right|center">
+
+            <Button
+                android:id="@+id/Left"
+                android:text="Left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom|center">
+
+                <Button
+                    android:id="@+id/up"
+                    android:text="up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/down"
+                    android:text="down"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left|center">
+
+                <Button
+                    android:id="@+id/right"
+                    android:text="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 
