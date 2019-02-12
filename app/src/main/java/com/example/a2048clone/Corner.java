@@ -9,16 +9,16 @@ package com.example.a2048clone;
 public class Corner {
 
     int i;
-    Square t,b,l,r;
+    Square tl,tr,bl,br;
 
     public Corner(){}
 
-    public Corner(int index, Square top, Square bottom, Square left, Square right){
+    public Corner(int index, Square topleft, Square topright, Square bottomleft, Square bottomright){
         i = index;
-        t = top;
-        b = bottom;
-        l = left;
-        r = right;
+        tl = topleft;
+        tr = topright;
+        bl = bottomleft;
+        br = bottomright;
 
     }
 
@@ -30,35 +30,35 @@ public class Corner {
         this.i = i;
     }
 
-    public Square getT() {
-        return t;
+    public Square getTl() {
+        return tl;
     }
 
-    public void setT(Square t) {
-        this.t = t;
+    public void setTl(Square tl) {
+        this.tl = tl;
     }
 
-    public Square getB() {
-        return b;
+    public Square getTr() {
+        return tr;
     }
 
-    public void setB(Square b) {
-        this.b = b;
+    public void setTr(Square tr) {
+        this.tr = tr;
     }
 
-    public Square getL() {
-        return l;
+    public Square getBl() {
+        return bl;
     }
 
-    public void setL(Square l) {
-        this.l = l;
+    public void setBl(Square bl) {
+        this.bl = bl;
     }
 
-    public Square getR() {
-        return r;
+    public Square getBr() {
+        return br;
     }
 
-    public void setR(Square r) {
-        this.r = r;
+    public void setBr(Square br) {
+        this.br = br;
     }
 }

@@ -1,20 +1,23 @@
 package com.example.a2048clone;
 
 import android.support.annotation.VisibleForTesting;
+import android.widget.Button;
 
 public class Square {
 
     int ind, val;
-    Square up, down, left, right, nullSquare;
+    Button button;
 
 
     public Square(){}
 
     //allow for one square with index -1 to act as sides of side tiles
-    public Square(int index, Square nullSq){
+    public Square(int index, Button b){
         val=0;
         ind = index;
-        nullSquare = nullSq;
+        button = b;
+        //b.
+        //nullSquare = nullSq;
     }
 
 
@@ -24,61 +27,64 @@ public class Square {
     int getVal(){
         return this.val;
     }
+    Button getButton(){ return this.button; }
 
-    public Square getnSq(){
-        return nullSquare;
-    }
 
     void addVal(int a){
         val += a;
     }
 
 
+    /*
+    void setDirections(Square dU, Square dD,Square dL,Square dR){
 
-    void setDirections(Square newUp, Square newDown, Square newLeft, Square newRight){
-        if(newUp.getInd() == ind){
-            up = nullSquare;
+        if(dU.getInd() == ind){
+            dUp = nullSquare;
         } else {
-            up = newUp;
+            dUp = dU;
         }
-        if(newDown.getInd() == ind){
-            down = nullSquare;
+        if( dDown.getInd() == ind){
+            dDown = nullSquare;
         } else {
-            down = newDown;
+            dDown = dD;
         }
-        if(newLeft.getInd() == ind){
-            left = nullSquare;
+        if( dL.getInd() == ind){
+            dLeft = nullSquare;
         } else {
-            left = newLeft;
+            dLeft = dL;
         }
-        if(newRight.getInd() == ind){
-            right = nullSquare;
+        if( dR.getInd() == ind){
+            dRight= nullSquare;
         } else {
-            right = newDown;
+            dRight = dR;
         }
 
     }
-
+    */
     // d for direction. 1 = up, 2 = down, 3 = left, 4 = right
-    void slide(int d){
+    /*
+    void chooseDirection(int d){
 
         switch (d){
             case 1:
-                up.addVal(val);
+                dUp.addVal(val);
                 break;
             case 2:
-                down.addVal(val);
+                dDown.addVal(val);
                 break;
             case 3:
-                left.addVal(val);
+                dLeft.addVal(val);
                 break;
             case 4:
-                right.addVal(val);
+                dRight.addVal(val);
                 break;
         }
         val = 0;
 
     }
+    */
+
+    //handle in board
 
     void reset(){
         val = 2;
