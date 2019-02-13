@@ -15,6 +15,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -22,8 +23,8 @@ import java.util.ArrayList;
  */
 public class FullscreenActivity extends AppCompatActivity {
 
-    ArrayList<Corner> corners = new ArrayList<Corner>();
-    ArrayList<Square> tiles = new ArrayList<Square>();
+    ArrayList<Corner> corners;
+    ArrayList<Square> tiles;
     Button up,down,left,right;
 
 
@@ -72,6 +73,9 @@ public class FullscreenActivity extends AppCompatActivity {
         Square s14 = new Square(14,b14);
         Square s15 = new Square(15,b15);
         Corner c0 = new Corner(0, s12, s13, s14, s15);
+
+        tiles = new ArrayList<Square>(Arrays.asList( s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15 ));
+        corners = new ArrayList<Corner>(Arrays.asList( c0, c1,c2,c3 ));
 
         up =(Button)findViewById(R.id.up);
         up.setOnClickListener(new View.OnClickListener() {
