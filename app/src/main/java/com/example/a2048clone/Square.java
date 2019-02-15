@@ -30,8 +30,8 @@ public class Square {
     Button getButton(){ return this.button; }
 
 
-    void addVal(int a){
-        val += a;
+    void doubleVal(){
+        val *= 2;
     }
 
 
@@ -86,8 +86,8 @@ public class Square {
 
     //handle in board
 
-    void reset(){
-        val = 2;
+    void setVal(int v){
+        this.val = v;
     }
 
 }
